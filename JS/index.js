@@ -69,7 +69,7 @@ const galleries = {
     extensoes: ["jpg"]
   }),
 
-    Corte: carregarImagens("./images/corte/laser-", {
+    Corte: carregarImagens("./images/corte/laser", {
     inicio: 1,
     fim: 3,
     extensoes: ["jpg"]
