@@ -2,310 +2,377 @@
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
-    <title>RB Revestimentos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="./CSS/index.css" />
-    <link rel="stylesheet" href="./CSS/chatbox.css" />
+    <title>RevetBraz - Comunicação Visual & Sinalização Premium</title>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;900&family=Roboto:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./CSS/style.css" />
   </head>
   <body>
     <!-- HEADER -->
-    <header class="header">
-      <img src="./images/logo/RB.png" alt="RB Revestimentos" class="hero-img" />
+    <header>
+      <div class="header-container">
+        <div class="logo">
+          <img src="./images/logo/Logo.png" alt="" />
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </nav>
+        <div class="contact-icons">
+          <a
+            href="https://wa.me/5511999999999"
+            target="_blank"
+            title="WhatsApp"
+          >
+            <i class="fab fa-whatsapp"></i>
+          </a>
+          <a href="mailto:contato@revetbraz.com.br" title="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+          <a href="tel:+551133334444" title="Telefone">
+            <i class="fas fa-phone"></i>
+          </a>
+        </div>
+      </div>
     </header>
 
     <!-- HERO CAROUSEL -->
-    <section class="hero-carousel">
-      <div
-        class="slide active"
-        style="
-          background-image: url(&quot;images/iluminada/iluminada-3.jpg&quot;);
-        "
-      >
-        <div class="container">
-          <h1 class="display-5 fw-bold">
-            Soluções em Revestimentos e Comunicação Visual
-          </h1>
-          <p class="lead">
-            25 anos de experiência trazendo qualidade e inovação para seu
-            negócio.
-          </p>
+    <section id="home" class="hero-section">
+      <div class="carousel">
+        <div
+          class="carousel-slide active"
+          style="
+            background-image:
+              linear-gradient(
+                135deg,
+                rgba(10, 10, 10, 0.7),
+                rgba(212, 175, 55, 0.3)
+              ),
+              url(&quot;https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1920&quot;);
+          "
+        >
+          <div class="slide-content">
+            <h1>Precisão em cada detalhe</h1>
+            <p>
+              Transformamos sua marca em uma experiência visual inesquecível
+            </p>
+            <a href="#contact" class="cta-button">Solicitar Orçamento</a>
+          </div>
+        </div>
+        <div
+          class="carousel-slide"
+          style="
+            background-image:
+              linear-gradient(
+                135deg,
+                rgba(10, 10, 10, 0.7),
+                rgba(212, 175, 55, 0.3)
+              ),
+              url(&quot;https://images.unsplash.com/photo-1497366216548-37526070297c?w=1920&quot;);
+          "
+        >
+          <div class="slide-content">
+            <h1>Inovação Visual</h1>
+            <p>Tecnologia de ponta para destacar seu negócio</p>
+            <a href="#contact" class="cta-button">Solicitar Orçamento</a>
+          </div>
+        </div>
+        <div
+          class="carousel-slide"
+          style="
+            background-image:
+              linear-gradient(
+                135deg,
+                rgba(10, 10, 10, 0.7),
+                rgba(212, 175, 55, 0.3)
+              ),
+              url(&quot;https://images.unsplash.com/photo-1460472178825-e5240623afd5?w=1920&quot;);
+          "
+        >
+          <div class="slide-content">
+            <h1>Sua marca no lugar certo</h1>
+            <p>Comunicação visual que gera resultados</p>
+            <a href="#contact" class="cta-button">Solicitar Orçamento</a>
+          </div>
         </div>
       </div>
-
-      <div
-        class="slide"
-        style="
-          background-image: url(&quot;images/Backlight/Backlight-5.jpg&quot;);
-        "
-      >
-        <div class="container">
-          <h1 class="display-5 fw-bold">Excelência em Comunicação Visual</h1>
-          <p class="lead">
-            Transforme sua marca com design e tecnologia de ponta.
-          </p>
-        </div>
+      <div class="carousel-indicators">
+        <div class="indicator active" data-slide="0"></div>
+        <div class="indicator" data-slide="1"></div>
+        <div class="indicator" data-slide="2"></div>
       </div>
+    </section>
 
-      <div
-        class="slide"
-        style="
-          background-image: url(&quot;images/LetraAcrilico/acrilico-10.jpg&quot;);
-        "
-      >
-        <div class="container">
-          <h1 class="display-5 fw-bold">Revestimentos de Alta Qualidade</h1>
-          <p class="lead">
-            Soluções sob medida para todos os tipos de ambiente.
-          </p>
-        </div>
-      </div>
+    <!-- PORTFÓLIO -->
+    <section id="portfolio">
+      <div class="container">
+        <h2 class="section-title">Nosso Portfólio</h2>
+        <p class="section-subtitle">
+          Projetos que transformam marcas em referências visuais
+        </p>
 
-      <div
-        class="slide"
-        style="
-          background-image: url(&quot;images/Backlight/Backlight-8.jpg&quot;);
-        "
-      >
-        <div class="container">
-          <h1 class="display-5 fw-bold">Ilumine seus ambientes com estilo</h1>
-          <p class="lead">Seu ambiente mais claro, seu dia mais leve.</p>
+        <div class="portfolio-grid">
+          <div class="portfolio-item large">
+            <img
+              src="https://images.unsplash.com/photo-1555421689-491a97ff2040?w=800"
+              alt="BOSS"
+              class="portfolio-img"
+            />
+            <div class="portfolio-overlay">
+              <h3>BOSS</h3>
+              <p>Letra caixa com LED e fachada ACM premium</p>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img
+              src="https://images.unsplash.com/photo-1578916171728-46686eac8d58?w=400"
+              alt="Krispy Kreme"
+              class="portfolio-img"
+            />
+            <div class="portfolio-overlay">
+              <h3>Krispy Kreme</h3>
+              <p>Letreiros luminosos e totem iluminado</p>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img
+              src="https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=400"
+              alt="Buddha Spa"
+              class="portfolio-img"
+            />
+            <div class="portfolio-overlay">
+              <h3>Buddha Spa</h3>
+              <p>Sinalização interna e adesivação</p>
+            </div>
+          </div>
+          <div class="portfolio-item wide">
+            <img
+              src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800"
+              alt="Viena"
+              class="portfolio-img"
+            />
+            <div class="portfolio-overlay">
+              <h3>Viena</h3>
+              <p>Fachada completa com letra caixa</p>
+            </div>
+          </div>
+          <div class="portfolio-item tall">
+            <img
+              src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=400&h=800"
+              alt="Laila Planejados"
+              class="portfolio-img"
+            />
+            <div class="portfolio-overlay">
+              <h3>Laila Planejados</h3>
+              <p>Totem vertical e painel iluminado</p>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img
+              src="https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?w=400"
+              alt="Santana Parque"
+              class="portfolio-img"
+            />
+            <div class="portfolio-overlay">
+              <h3>Santana Parque Shopping</h3>
+              <p>Sinalização completa e wayfinding</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- INTRO -->
-    <section class="intro">
-      <p>
-        Explore nossos revestimentos exclusivos<br />
-        veja como cada ambiente pode ganhar personalidade
-      </p>
-    </section>
 
-    <!-- PRODUTOS -->
-    <section class="products">
-      <div class="product-card" onclick="openGallery('AcoPolido')">
-        <img src="./images/aco_polido/polido-2.jpg" alt="Aco polido" />
-        <div class="product-info">
-          <h3>Aço<br />Polido</h3>
-        </div>
-      </div>
 
-      <div class="product-card" onclick="openGallery('Backlight')">
-        <img src="./images/Backlight/Backlight-1.jpg" alt="Backlight" />
-        <div class="product-info">
-          <h3>Backlight</h3>
-        </div>
-      </div>
+    <!-- SERVIÇOS -->
+    <section id="services">
+      <div class="container">
+        <h2 class="section-title">Nossos Serviços</h2>
+        <p class="section-subtitle">
+          Soluções completas para destacar sua marca
+        </p>
 
-      <div class="product-card" onclick="openGallery('Claraboias')">
-        <img src="./images/Claraboias/Cobertura-8.jpg" alt="Claraboiasa" />
-        <div class="product-info">
-          <h3>Claraboias</h3>
-        </div>
-      </div>
-
-      <div class="product-card" onclick="openGallery('Corte')">
-        <img src="./images/Corte/laser3.jpg" alt="Corte" />
-        <div class="product-info">
-          <h3>Corte</h3>
-        </div>
-      </div>
-
-      <div class="product-card" onclick="openGallery('CorteRouter')">
-        <img src="./images/corterouter/corte-router-1.jpg" alt="CorteRouter" />
-        <div class="product-info">
-          <h3>Corte<br />Router</h3>
-        </div>
-      </div>
-
-      <div class="product-card" onclick="openGallery('FachadaACM')">
-        <img src="./images/Fachada_ACM/Fachada_ACM-1.jpg" alt="ACM" />
-        <div class="product-info">
-          <h3>Fachada<br />ACM</h3>
-        </div>
-      </div>
-
-      <div class="product-card" onclick="openGallery('frontlight')">
-        <img src="./images/frontlight/frontlight-4.jpg" alt="frontlight" />
-        <div class="product-info">
-          <h3>Frontlight</h3>
-        </div>
-      </div>
-
-      <div class="product-card" onclick="openGallery('Galvanizada')">
-        <img src="./images/Galvanizada/Galvanizada-7.jpg" alt="Galvanizada" />
-        <div class="product-info">
-          <h3>Galvanizada</h3>
-        </div>
-      </div>
-
-      <div class="product-card" onclick="openGallery('iluminada')">
-        <img src="./images/iluminada/iluminada-1.jpg" alt="iluminada" />
-        <div class="product-info">
-          <h3>Letra iluminada</h3>
-        </div>
-      </div>
-
-      <div class="product-card" onclick="openGallery('inox_escovado')">
-        <img src="./images/inox_escovado/INOX-4.jpg" alt="inox_escovado" />
-        <div class="product-info">
-          <h3>Inox Escovado</h3>
-        </div>
-      </div>
-
-      <div class="product-card" onclick="openGallery('Latao')">
-        <img src="./images/Latao/Latao-2.jpg" alt="Latao" />
-        <div class="product-info">
-          <h3>Latao</h3>
-        </div>
-      </div>
-
-      <div class="product-card" onclick="openGallery('Letra')">
-        <img src="./images/Letra/Letras-6.jpeg" alt="Letra" />
-        <div class="product-info">
-          <h3>Letra</h3>
-        </div>
-      </div>
-
-      <div class="product-card" onclick="openGallery('Letra_MDF')">
-        <img src="./images/Letra_MDF/MDF-4.jpg" alt="Letra_MDF" />
-        <div class="product-info">
-          <h3>Letra MDF</h3>
-        </div>
-      </div>
-
-      <div class="product-card" onclick="openGallery('letra_PVC')">
-        <img src="./images/letra_PVC/PVC-2.jpg" alt="letra_PVC" />
-        <div class="product-info">
-          <h3>Letra PVC</h3>
-        </div>
-      </div>
-
-      <div class="product-card" onclick="openGallery('LetraAcrilico')">
-        <img src="./images/LetraAcrilico/acrilico-10.jpg" alt="LetraAcrilico" />
-        <div class="product-info">
-          <h3>Letra Acrilico</h3>
-        </div>
-      </div>
-
-      <div class="product-card" onclick="openGallery('Painel')">
-        <img src="./images/Painel/Painel-1.jpeg" alt="Painel" />
-        <div class="product-info">
-          <h3>Painel</h3>
-        </div>
-      </div>
-
-      <div class="product-card" onclick="openGallery('produtosacrilico')">
-        <img src="./images/produtos_em_acrilico/prod3.jpg" alt="Painel" />
-        <div class="product-info">
-          <h3>produtos<br />Acrilico</h3>
-        </div>
-      </div>
-
-      <div class="product-card" onclick="openGallery('Sinalizacao')">
-        <img
-          src="./images/Sinalizacao/sinalizacao-interna-1.jpg"
-          alt="Sinalizacao"
-        />
-        <div class="product-info">
-          <h3>Sinalização</h3>
-        </div>
-      </div>
-
-      <div class="product-card" onclick="openGallery('Toldo')">
-        <img src="./images/Toldo/toldo-1.jpg" alt="Toldo" />
-        <div class="product-info">
-          <h3>Toldo</h3>
-        </div>
-      </div>
-
-      <div class="product-card" onclick="openGallery('Toldo_cortina')">
-        <img src="./images/Toldo_cortina/cortina-3.jpg" alt="Toldo_cortina" />
-        <div class="product-info">
-          <h3>Toldo Cortina</h3>
-        </div>
-      </div>
-
-      <div class="product-card" onclick="openGallery('toldo_retratil')">
-        <img
-          src="./images/toldo_retratil/retratil-2.jpg"
-          alt="toldo_retratil"
-        />
-        <div class="product-info">
-          <h3>Toldo Retratil</h3>
-        </div>
-      </div>
-
-      <div class="product-card" onclick="openGallery('Totem')">
-        <img src="./images/Totem/Totem-1.jpg" alt="Totem" />
-        <div class="product-info">
-          <h3>Totem</h3>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3>Letra Caixa com LED</h3>
+            <p>
+              Letras tridimensionais iluminadas com tecnologia LED de alta
+              eficiência e durabilidade.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-building"></i>
+            </div>
+            <h3>Fachadas ACM</h3>
+            <p>
+              Revestimento em ACM (Aluminium Composite Material) para fachadas
+              modernas e elegantes.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-sign"></i>
+            </div>
+            <h3>Totens e Painéis</h3>
+            <p>
+              Totens verticais e painéis informativos com acabamento premium e
+              iluminação personalizada.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-print"></i>
+            </div>
+            <h3>Adesivagem</h3>
+            <p>
+              Plotagem e adesivação para veículos, vitrines e ambientes internos
+              com qualidade fotográfica.
+            </p>
+          </div>
+          <div class="service-card">
+            <div class="service-icon">
+              <i class="fas fa-star"></i>
+            </div>
+            <h3>Letreiros Luminosos</h3>
+            <p>
+              Letreiros iluminados em neon, LED e outras tecnologias para máximo
+              impacto visual.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- MODAL GALERIA -->
-    <!-- MODAL GALERIA -->
-    <div class="modal" id="galleryModal">
-      <span class="close" onclick="closeGallery()">×</span>
-      <img id="modalImage" src="" alt="Galeria" />
-    </div>
 
-    <!-- Botão de Chat -->
-    <button id="botao-chat" aria-label="Abrir chat">
-      <i class="fa-solid fa-headset"></i>
-    </button>
 
-    <!-- Bolha de mensagem -->
-    <div id="chat-message">Posso te ajudar?</div>
+    <!-- CONTATO -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-title">Entre em Contato</h2>
+        <p class="section-subtitle">Vamos transformar sua marca juntos</p>
 
-    <!-- Container do Chat -->
-    <div
-      id="chat-container"
-      role="dialog"
-      aria-modal="true"
-      aria-labelledby="chat-header-title"
-    >
-      <div id="chat-header">
-        <span id="chat-header-title">Chat AP Revestimentos</span>
-        <button id="fechar-chat" aria-label="Fechar chat">&times;</button>
+        <div class="contact-content">
+          <div class="contact-info">
+            <h2>Solicite seu orçamento</h2>
+            <p>
+              Estamos prontos para atender sua empresa com soluções
+              personalizadas em comunicação visual. Fale conosco pelo WhatsApp
+              ou preencha o formulário ao lado.
+            </p>
+            <a
+              href="https://wa.me/5511950840228?text=Olá! Gostaria de solicitar um orçamento."
+              target="_blank"
+              class="whatsapp-button"
+            >
+              <i class="fab fa-whatsapp"></i>
+              Falar no WhatsApp
+            </a>
+          </div>
+
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Nome Completo</label>
+                <input type="text" id="name" name="name" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Telefone</label>
+                <input type="tel" id="phone" name="phone" required />
+              </div>
+              <div class="form-group">
+                <label for="service">Tipo de Serviço</label>
+                <select id="service" name="service" required>
+                  <option value="">Selecione...</option>
+                  <option value="letra-caixa">Letra Caixa com LED</option>
+                  <option value="fachada">Fachada ACM</option>
+                  <option value="totem">Totem/Painel</option>
+                  <option value="adesivagem">Adesivagem</option>
+                  <option value="letreiro">Letreiro Luminoso</option>
+                  <option value="outros">Outros</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" required></textarea>
+              </div>
+              <button type="submit" class="submit-button">
+                Enviar Mensagem
+              </button>
+            </form>
+          </div>
+        </div>
+
+
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-about">
+          <h3>RB Revestimento</h3>
+          <p>
+            Referência nacional em comunicação visual e sinalização premium.
+            Transformamos marcas em experiências visuais inesquecíveis.
+          </p>
+          <div class="social-links">
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-section">
+          <h4>Navegação</h4>
+          <ul class="footer-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#services">Serviços</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Serviços</h4>
+          <ul class="footer-links">
+            <li><a href="#services">Letra Caixa LED</a></li>
+            <li><a href="#services">Fachadas ACM</a></li>
+            <li><a href="#services">Totens e Painéis</a></li>
+            <li><a href="#services">Adesivagem</a></li>
+            <li><a href="#services">Letreiros</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contato</h4>
+          <ul class="footer-links">
+            <li><i class="fab fa-whatsapp"></i> (11) 95084-0228</li>
+            <li><i class="fas fa-envelope"></i> contato@rbmulticortes.com.br</li>
+            <li><i class="fas fa-clock"></i> Seg-Sex: 8h-18h</li>
+          </ul>
+        </div>
       </div>
-      <div id="chat-box" aria-live="polite" aria-atomic="false"></div>
-      <a id="whatsapp-btn" href="#" target="_blank" rel="noopener noreferrer"
-        >Falar no WhatsApp</a
-      >
-      <div id="input-area">
-        <input
-          type="text"
-          id="user-input"
-          placeholder="Digite sua pergunta aqui..."
-          aria-label="Mensagem do usuário"
-        />
-        <button id="enviar-btn">Enviar</button>
+
+      <div class="footer-bottom">
+        © 2025 RevetBraz - Comunicação Visual & Sinalização. Todos os direitos
+        reservados.
       </div>
-    </div>
-
-    <!-- SCRIPTS -->
-    <script src="./JS/index.js"></script>
-    <script src="./JS/Chatbox.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
-
-    <script>
-      const slides = document.querySelectorAll(".hero-carousel .slide");
-      let currentSlide = 0;
-
-      setInterval(() => {
-        slides[currentSlide].classList.remove("active");
-        currentSlide = (currentSlide + 1) % slides.length;
-        slides[currentSlide].classList.add("active");
-      }, 4000);
-    </script>
+    </footer>
+    <script src="./JS/script.js"></script>
   </body>
 </html>
